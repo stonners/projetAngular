@@ -1,0 +1,67 @@
+<div class="row change" *ngIf="change">
+  <div class="col-12">
+    Les changements ont bien été enregistrées
+  </div>
+</div>
+{{console|json}}
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Nom</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.name">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Description</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.description">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Marque</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.brand">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Image</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.image">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Taille</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.size">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Prix</label>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="console.price">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="submit">
+        <button class="btn btn-outline-success" (click)="modif()">Envoyer</button>
+      </div>
+    </div>
+  </div>

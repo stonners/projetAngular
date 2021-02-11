@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <app-console *ngFor="let consoles of console; let i = index"
+               [brand]="consoles.data.brand"
+               [name]="consoles.data.name"
+               [image]="consoles.data.image"
+               [description]="consoles.data.description"
+               [price]="consoles.data.price"
+               [id]="consoles.id"
+               [size]="consoles.data.size"></app-console>
+</ul>
