@@ -27,7 +27,7 @@ export class ConsoleService {
 
   getConsoleById(id: number) {
     for (const consoles of this.console) {
-      if (consoles.id) {
+      if (consoles.id === id) {
         return consoles;
       }
     }
